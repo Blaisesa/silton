@@ -5,20 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silton - Modular Homes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <!-- The projects body -->
 
 <body>
     <!-- Navbar section -->
-     
+    <nav>
+        <div class="logo">MyLogo</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Header hero section -->
-    <header>
+    <header class="hero">
+        <h1>Welcome to Silton</h1>
+        <p>We build modular homes tailored to your needs.</p>
     </header>
     <!-- Main content section -->
     <main>
+        <!-- Homes section -->
+        <section class="homes">
+            <h2>Our Modular Homes</h2>
+            <div class="home-card">
+                <img src="assets\images\background.png" alt="home">
+                <h3>Home Title</h3>
+                <p>Brief description of the home.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="home-card">
+                <img src="assets\images\background.png" alt="home">
+                <h3>Home Title</h3>
+                <p>Brief description of the home.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="home-card last">
+                <img src="assets\images\background.png" alt="home">
+                <h3>Home Title</h3>
+                <p>Brief description of the home.</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Fast, Affordable, and Customized just for you!</h2>
+            <a href="#">Contact Us Today</a>
+        </section>
     </main>
     <!-- Footer section -->
     <footer>
