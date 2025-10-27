@@ -32,8 +32,6 @@ nav {
     padding: 1rem 2rem;
     /* semi-transparent effect */
     background: var(--accent-color);
-    /* Safari support */
-    -webkit-backdrop-filter: blur(10px);
     /* stays at top and across the screen full width */
     position: fixed;
     top: 0;
