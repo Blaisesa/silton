@@ -26,7 +26,12 @@ body {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--primary-color);
     margin-bottom: 10px;
 }
@@ -252,7 +257,7 @@ main {
     color: var(--text-color);
     max-width: 800px;
     margin: 0 auto;
-}   
+}
 .details {
     display: flex;
     flex-direction: row;
@@ -262,7 +267,8 @@ main {
     color: white;
 }
 /* Technology card styles */
-.tech-card, .tech-card-last {
+.tech-card,
+.tech-card-last {
     background-color: var(--accent-color);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -272,11 +278,15 @@ main {
     margin-left: -25px;
     transition: 300ms ease;
 }
-.tech-card h3, .tech-card-last h3, .tech-card-middle h3 {
+.tech-card h3,
+.tech-card-last h3,
+.tech-card-middle h3 {
     margin-bottom: 10px;
     color: white;
 }
-.tech-card p, .tech-card-last p, .tech-card-middle p {
+.tech-card p,
+.tech-card-last p,
+.tech-card-middle p {
     font-size: 1rem;
     color: white;
 }
@@ -293,7 +303,9 @@ main {
     transition: 300ms ease;
 }
 
-.tech-card-middle:hover, .tech-card:hover, .tech-card-last:hover {
+.tech-card-middle:hover,
+.tech-card:hover,
+.tech-card-last:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -309,15 +321,6 @@ main {
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid white;
     margin-bottom: -25px;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
 }
 
 .btn {
@@ -345,13 +348,20 @@ footer {
 }
 
 @media (max-width: 900px) {
-
     body {
         margin: 0;
     }
 
     .home-card.last img {
         height: 200px;
+    }
+    
+    .mobile-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 }
 
