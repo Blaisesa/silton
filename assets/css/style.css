@@ -160,7 +160,7 @@ a:active {
     color: white;
 }
 .logo img {
-    height: 50px;
+    max-height: 50px;
 }
 
 /* Main section styles */
