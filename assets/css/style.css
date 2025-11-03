@@ -119,7 +119,7 @@ main {
 
 /* Hero section styles */
 .hero {
-    height: 75vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -344,197 +344,141 @@ details[open] p.view-more {
     background-color: var(--accent-color);
 }
 
-/* Design gallery styles */
-.design-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 20px 0;
+/* About Us styles */
+.about-us {
+    padding: 40px 0;
+    background-color: var(--background-color);
+    border-top: 4px solid var(--primary-color);
 }
 
-.design-card {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    flex-grow: 1;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
     text-align: left;
 }
 
-.design-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: left;
+    max-width: 600px;
 }
 
-.design-card h3 {
-    margin: 15px;
+.offers {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.offer-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.offers h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+.offer-list li::before {
+    content: "✓";
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.offer-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.offer-list li strong {
+    color: var(--secondary-color);
+}
+.extra-info {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: left;
+    max-width: 600px;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+.how-we-work {
+    margin-top: 40px;
+    text-align: left;
+}
+.how-we-work h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.how-we-work p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.process-steps {
+    list-style: decimal;
+    padding-left: 20px;
+    max-width: 600px;
+}
+/* marker */
+.process-steps li::marker {
+    color: var(--primary-color);
+    font-weight: bold;
     font-size: 1.2rem;
+    padding-left: 10px;
+}
+.process-steps li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+    border-left: 4px solid var(--primary-color);
+    padding-left: 10px;
+}
+.process-steps li strong {
     color: var(--secondary-color);
 }
 
-.design-card p {
-    margin: 0 15px 15px 15px;
-    font-size: 1rem;
-    color: var(--text-color);
-    max-width: 300px;
-}
-.design-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.custom-design {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-    gap: 20px;
-    background-color: var(--primary-color);
-    padding: 30px;
-}
-.custom-design h2 {
-    color: white;
-    font-size: 2rem;
-    text-shadow: #2d5076 2px 2px 4px;
-}
-.custom-design p {
-    color: white;
-    max-width: 600px;
-    font-size: 1.2rem;
-    text-shadow: #2d5076 1px 1px 3px;
-}
-.custom-design a.btn {
-    margin-top: 20px;
-    background-color: var(--secondary-color);
-}
-.custom-design a.btn:hover {
-    background-color: var(--accent-color);
-}
-
-/* About us page */
-.overview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-}
-
-.overview h2 {
-    font-size: 2rem;
-    color: var(--primary-color);
-}
-
-.overview p {
-    font-size: 1.1rem;
-    color: var(--text-color);
-    max-width: 600px;
-    line-height: 1.6;
-}
-
-.philosophy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    margin: 20px 0;
-    padding: 15px;
-    background-color: var(--accent-color);
-}
-.philosophy h2 {
-    font-size: 2rem;
-    color: white;
-}
-.philosophy p {
-    font-size: 1.1rem;
-    color: white;
-    max-width: 600px;
-    line-height: 1.6;
-}
-
-.beyond-homes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    margin: 20px 0;
-}
-.beyond-homes h2 {
-    font-size: 2rem;
-    color: var(--primary-color);
-}
-.beyond-homes p {
-    font-size: 1.1rem;
-    color: var(--text-color);
-    max-width: 600px;
-    line-height: 1.6;
-}
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-.card {
-    background-color: var(--accent-color);
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    padding: 15px;
-    flex-grow: 1;
-    min-width: 250px;
-}
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.custom-designs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-    gap: 20px;
-}
-.custom-designs h2 {
-    font-size: 2rem;
-}
-.custom-designs p {
-    max-width: 600px;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
 .cta {
+    margin-top: 40px;
+    text-align: left;
+    padding: 20px;
+    max-width: 600px;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    text-align: center;
-    gap: 15px;
-    background-color: var(--primary-color);
-    padding: 30px;
 }
 .cta h2 {
-    color: white;
     font-size: 2rem;
-    text-shadow: #2d5076 2px 2px 4px;
+    margin-bottom: 20px;
+    color: white;
 }
 .cta p {
+    font-size: 1.1rem;
+    line-height: 1.6;
     color: white;
-    max-width: 600px;
-    font-size: 1.2rem;
-    text-shadow: #2d5076 1px 1px 3px;
 }
 .cta a.btn {
     margin-top: 20px;
-    background-color: var(--secondary-color);
-}
-.cta a.btn:hover {
-    background-color: var(--accent-color);
+    background-color: white;
+    color: var(--primary-color);
+    width: auto;
+    padding: 10px 20px;
 }
 
 /* Footer styles */
