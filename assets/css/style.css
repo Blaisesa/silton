@@ -126,7 +126,7 @@ main {
     align-items: center;
     color: white;
     text-align: center;
-    background-color: #2d5076;
+    background-color: #354A5F;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 }
 .hero h1 {
@@ -147,9 +147,9 @@ main {
 }
 
 .hero img {
-    height: 100px;
-    width: auto;
-    margin-bottom: 20px;
+    width: 80vw;
+    max-width: 700px;
+    object-fit: cover;
 }
 
 .homes {
@@ -565,6 +565,9 @@ footer p {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+    }
+    .hero img{
+        max-width: 500px;
     }
 }
 
