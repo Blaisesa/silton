@@ -354,6 +354,132 @@ main {
 .custom-design a.btn:hover {
     background-color: var(--accent-color);
 }
+
+/* About us page */
+.overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.overview h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.overview p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.philosophy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: var(--accent-color);
+}
+.philosophy h2 {
+    font-size: 2rem;
+    color: white;
+}
+.philosophy p {
+    font-size: 1.1rem;
+    color: white;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.beyond-homes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+.beyond-homes h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.beyond-homes p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    max-width: 600px;
+    line-height: 1.6;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.card {
+    background-color: var(--accent-color);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 15px;
+    flex-grow: 1;
+    min-width: 150px;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.custom-designs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+.custom-designs h2 {
+    font-size: 2rem;
+}
+.custom-designs p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+    gap: 15px;
+    background-color: var(--primary-color);
+    padding: 30px;
+}
+.cta h2 {
+    color: white;
+    font-size: 2rem;
+    text-shadow: #2d5076 2px 2px 4px;
+}
+.cta p {
+    color: white;
+    max-width: 600px;
+    font-size: 1.2rem;
+    text-shadow: #2d5076 1px 1px 3px;
+}
+.cta a.btn {
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+}
+.cta a.btn:hover {
+    background-color: var(--accent-color);
+}
+
 /* Footer styles */
 footer {
     background-color: var(--accent-color);
