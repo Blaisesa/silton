@@ -159,13 +159,9 @@ a:hover,
 a:active {
     color: white;
 }
-.logo {
-    margin: 10px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: beige;
+.logo img {
+    height: 50px;
 }
-
 
 /* Main section styles */
 main {
