@@ -1,15 +1,23 @@
-const slides = document.querySelectorAll(".slide");
-let current = 0;
+const words = ["Home", "Space", "Future"];
+  let index = 0;
+  const changingWord = document.querySelector(".changing-word");
 
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[index].classList.add("active");
-}
-// auto-slide
-setInterval(() => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-}, 3000);
+  window.onload = () => {
+  setInterval(() => {
+    // fade out
+    changingWord.classList.add("fade-out");
 
-// show first slide
-showSlide(current);
+    setTimeout(() => {
+      // change word
+      index = (index + 1) % words.length;
+      changingWord.textContent = words[index];
+
+      // fade in
+      changingWord.classList.remove("fade-out");
+      changingWord.classList.add("fade-in");
+
+      // reset fade-in after it finishes
+      setTimeout(() => changingWord.classList.remove("fade-in"), 600);
+    }, 600);
+  }, 2500); // change every 2.5 seconds
+};
