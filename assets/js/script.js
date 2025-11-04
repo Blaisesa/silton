@@ -1,23 +1,27 @@
-const words = ["Home", "Space", "Future"];
+document.addEventListener("DOMContentLoaded", () => {
+  const words = ["Home", "Space", "Future"];
+  const el = document.querySelector(".changing-word");
   let index = 0;
-  const changingWord = document.querySelector(".changing-word");
+  let isAnimating = false;
 
-  window.onload = () => {
-  setInterval(() => {
-    // fade out
-    changingWord.classList.add("fade-out");
+  function changeWord() {
+    if (isAnimating) return;
+    isAnimating = true;
+    el.classList.add("fade-out");
 
     setTimeout(() => {
-      // change word
       index = (index + 1) % words.length;
-      changingWord.textContent = words[index];
+      el.textContent = words[index];
+      el.classList.remove("fade-out");
+      el.classList.add("fade-in");
 
-      // fade in
-      changingWord.classList.remove("fade-out");
-      changingWord.classList.add("fade-in");
-
-      // reset fade-in after it finishes
-      setTimeout(() => changingWord.classList.remove("fade-in"), 600);
+      setTimeout(() => {
+        el.classList.remove("fade-in");
+        isAnimating = false;
+      }, 600);
     }, 600);
-  }, 2500); // change every 2.5 seconds
-};
+  }
+
+  // Start loop
+  setInterval(changeWord, 3000);
+});
