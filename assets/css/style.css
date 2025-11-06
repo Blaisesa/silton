@@ -34,6 +34,7 @@ h5,
 h6 {
     color: var(--primary-color);
     margin-bottom: 10px;
+    text-align: left;
 }
 
 /* Navbar styles */
@@ -136,6 +137,7 @@ main {
     margin-bottom: 20px;
     text-shadow: #2d5076 2px 2px 4px;
     color: white;
+    text-align: center;
 }
 
 .hero p {
